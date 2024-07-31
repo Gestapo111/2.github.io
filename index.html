@@ -1,1 +1,301 @@
-
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conozcamos los Fluidos - Evaluación</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        h1 {
+            color: #0f0;
+            font-size: 2.5em;
+            text-shadow: 0 0 10px #0f0;
+            margin-top: 20px;
+        }
+        .quiz-container {
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            width: 80%;
+            max-width: 800px;
+            margin-top: 20px;
+        }
+        .question {
+            margin-bottom: 15px;
+        }
+        .options {
+            list-style-type: none;
+            padding: 0;
+        }
+        .options li {
+            background-color: #333;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .options li:hover {
+            background-color: #444;
+        }
+        footer {
+            background-color: #1c1c1c;
+            color: #ffffff;
+            padding: 10px 0;
+            font-size: 0.9em;
+            text-align: center;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Conozcamos los Fluidos - Evaluación</h1>
+    <div class="quiz-container">
+        <div class="question">
+            <h3>1. ¿Qué es la viscosidad?</h3>
+            <ul class="options">
+                <li>a) La capacidad de un fluido para resistir el flujo.</li>
+                <li>b) La capacidad de un fluido para fluir rápidamente.</li>
+                <li>c) La densidad de un fluido.</li>
+                <li>d) La temperatura de un fluido.</li>
+            </ul>
+        </div>
+        <div class="question">
+            <h3>2. ¿Qué principio explica el comportamiento de los fluidos en movimiento?</h3>
+            <ul class="options">
+                <li>a) Principio de Arquímedes.</li>
+                <li>b) Principio de Bernoulli.</li>
+                <li>c) Ley de Pascal.</li>
+                <li>d) Ley de Boyle.</li>
+            </ul>
+        </div>
+        <div class="question">
+            <h3>3. ¿Qué mide la presión en un fluido?</h3>
+            <ul class="options">
+                <li>a) La fuerza por unidad de área.</li>
+                <li>b) El volumen por unidad de área.</li>
+                <li>c) La temperatura por unidad de volumen.</li>
+                <li>d) La masa por unidad de volumen.</li>
+            </ul>
+        </div>
+        <div class="question">
+            <h3>4. ¿Qué es el principio de Pascal?</h3>
+            <ul class="options">
+                <li>a) La presión aplicada a un fluido se transmite uniformemente en todas las direcciones.</li>
+                <li>b) Un objeto sumergido en un fluido experimenta una fuerza hacia arriba.</li>
+                <li>c) La presión de un fluido disminuye a medida que aumenta la velocidad del fluido.</li>
+                <li>d) La densidad de un fluido varía con la temperatura.</li>
+            </ul>
+        </div>
+        <div class="question">
+            <h3>5. ¿Qué es el principio de Arquímedes?</h3>
+            <ul class="options">
+                <li>a) Un objeto sumergido en un fluido experimenta una fuerza hacia arriba igual al peso del fluido desplazado.</li>
+                <li>b) La presión en un fluido en reposo es la misma en todas las direcciones.</li>
+                <li>c) La presión en un fluido en movimiento es inversamente proporcional a la velocidad del fluido.</li>
+                <li>d) La viscosidad de un fluido es constante a temperatura constante.</li>
+            </ul>
+        </div>
+        <div class="question">
+            <h3>6. ¿Qué es la densidad de un fluido?</h3>
+            <ul class="options">
+                <li>a) La masa por unidad de volumen.</li>
+                <li>b) La fuerza por unidad de área.</li>
+                <li>c) La velocidad por unidad de tiempo.</li>
+                <li>d) La presión por unidad de volumen.</li>
+            </ul>
+        </div>
+        <div class="question">
+            <h3>7. ¿Qué es el flujo laminar?</h3>
+            <ul class="options">
+                <li>a) Un tipo de flujo en el que las capas del fluido se mueven en paralelo.</li>
+                <li>b) Un tipo de flujo en el que las capas del fluido se mezclan.</li>
+                <li>c) Un tipo de flujo que se produce solo en gases.</li>
+                <li>d) Un tipo de flujo que se produce solo en líquidos.</li>
+            </ul>
+        </div>
+        <div class="question">
+            <h3>8. ¿Qué es el flujo turbulento?</h3>
+            <ul class="options">
+                <li>a) Un tipo de flujo en el que las capas del fluido se mezclan y crean vórtices.</li>
+                <li>b) Un tipo de flujo en el que las capas del fluido se mueven en paralelo.</li>
+                <li>c) Un tipo de flujo que se produce solo en líquidos.</li>
+                <li>d) Un tipo de flujo que se produce solo en gases.</li>
+            </ul>
+        </div>
+        <div class="question">
+            <h3>9. ¿Qué es la tensión superficial?</h3>
+            <ul class="options">
+                <li>a) La fuerza que actúa sobre la superficie de un líquido, reduciendo su área.</li>
+                <li>b) La resistencia de un fluido a fluir.</li>
+                <li>c) La fuerza que mantiene unidos a los átomos en un sólido.</li>
+                <li>d) La presión ejercida por un fluido.</li>
+            </ul>
+        </div>
+        <div class="question">
+            <h3>10. ¿Qué es la capilaridad?</h3>
+            <ul class="options">
+                <li>a) La capacidad de un líquido para fluir en espacios estrechos sin la ayuda de fuerzas externas.</li>
+                <li>b) La capacidad de un gas para expandirse y llenar su contenedor.</li>
+                <li>c) La capacidad de un sólido para absorber un líquido.</li>
+                <li>d) La capacidad de un líquido para resistir el flujo.</li>
+            </ul>
+        </div>
+        <div class="question">
+            <h3>11. ¿Qué es la presión atmosférica?</h3>
+            <ul class="options">
+                <li>a) La presión ejercida por la atmósfera sobre la superficie de la Tierra.</li>
+                <li>b) La presión ejercida por un líquido en reposo.</li>
+                <li>c) La presión ejercida por un gas en un contenedor.</li>
+                <li>d) La presión ejercida por un sólido.</li>
+            </ul>
+        </div>
+        <div class="question">
+            <h3>12. ¿Qué es la ley de Boyle?</h3>
+            <ul class="options">
+                <li>a) A temperatura constante, el volumen de un gas es inversamente proporcional a su presión.</li>
+                <li>b) A temperatura constante, el volumen de un gas es directamente proporcional a su presión.</li>
+                <li>c) A presión constante, el volumen de un gas es inversamente proporcional a su temperatura.</li>
+                <li>d) A presión constante, el volumen de un gas es directamente proporcional a su temperatura.</li>
+            </ul>
+        </div>
+        <div class="question">
+            <h3>13. ¿Qué es la ley de Charles?</h3>
+            <ul class="options">
+                <li>a) A presión constante, el volumen de un gas es directamente proporcional a su temperatura.</li>
+                <li>b) A presión constante, el volumen de un gas es inversamente proporcional a su temperatura.</li>
+                <li>c) A temperatura constante, el volumen de un gas es inversamente proporcional a su presión.</li>
+                <li>d) A temperatura constante, el volumen de un gas es directamente proporcional a su presión.</li>
+            </ul>
+        </div>
+        <div class="question">
+            <h3>14. ¿Qué es la ley de Avogadro?</h3>
+            <ul class="options">
+                <li>a) A presión y temperatura constantes, el volumen de un gas es directamente proporcional al número de moles del gas.</li>
+                <li>b) A presión y temperatura constantes, el volumen de un gas es inversamente proporcional al número de moles del gas.</li>
+                <li>c) A volumen y temperatura constantes, la presión de un gas es directamente proporcional al número de moles del gas.</li>
+                <li>d) A volumen y temperatura constantes, la presión de un gas es inversamente proporcional al número de moles del gas.</li>
+            </ul>
+        </div>
+        <div class="question">
+            <h3>15. ¿Qué es la ecuación de estado de los gases ideales?</h3>
+            <ul class="options">
+                <li>a) PV = nRT.</li>
+                <li>b) PV = nT/R.</li>
+                <li>c) P = VnRT.</li>
+                <li>d) P/V = nRT.</li>
+            </ul>
+        </div>
+        <div class="question">
+            <h3>16. ¿Qué es la tensión de vapor?</h3>
+            <ul class="options">
+                <li>a) La presión ejercida por el vapor en equilibrio con su líquido a una temperatura determinada.</li>
+                <li>b) La presión ejercida por un líquido en reposo.</li>
+                <li>c) La presión ejercida por un gas en un contenedor.</li>
+                <li>d) La presión ejercida por un sólido.</li>
+            </ul>
+        </div>
+        <div class="question">
+            <h3>17. ¿Qué es el punto de ebullición?</h3>
+            <ul class="options">
+                <li>a) La temperatura a la cual la presión de vapor de un líquido es igual a la presión externa.</li>
+                <li>b) La temperatura a la cual un líquido se convierte en sólido.</li>
+                <li>c) La temperatura a la cual un gas se convierte en líquido.</li>
+                <li>d) La temperatura a la cual un sólido se convierte en líquido.</li>
+            </ul>
+        </div>
+        <div class="question">
+            <h3>18. ¿Qué es la viscosidad dinámica?</h3>
+            <ul class="options">
+                <li>a) La medida de la resistencia de un fluido al flujo.</li>
+                <li>b) La medida de la capacidad de un fluido para fluir rápidamente.</li>
+                <li>c) La medida de la densidad de un fluido.</li>
+                <li>d) La medida de la temperatura de un fluido.</li>
+            </ul>
+        </div>
+        <div class="question">
+            <h3>19. ¿Qué es la ecuación de continuidad?</h3>
+            <ul class="options">
+                <li>a) A1V1 = A2V2.</li>
+                <li>b) P1V1 = P2V2.</li>
+                <li>c) F = ma.</li>
+                <li>d) E = mc^2.</li>
+            </ul>
+        </div>
+        <div class="question">
+            <h3>20. ¿Qué es la ecuación de Bernoulli?</h3>
+            <ul class="options">
+                <li>a) P + 1/2 ρv^2 + ρgh = constante.</li>
+                <li>b) PV = nRT.</li>
+                <li>c) F = ma.</li>
+                <li>d) E = mc^2.</li>
+            </ul>
+        </div>
+        <div class="question">
+            <h3>21. ¿Qué es la densidad relativa?</h3>
+            <ul class="options">
+                <li>a) La relación entre la densidad de una sustancia y la densidad de una sustancia de referencia.</li>
+                <li>b) La relación entre la masa de una sustancia y su volumen.</li>
+                <li>c) La relación entre la presión de una sustancia y su volumen.</li>
+                <li>d) La relación entre la temperatura de una sustancia y su presión.</li>
+            </ul>
+        </div>
+        <div class="question">
+            <h3>22. ¿Qué es la compresibilidad?</h3>
+            <ul class="options">
+                <li>a) La medida de la capacidad de un fluido para disminuir de volumen bajo presión.</li>
+                <li>b) La medida de la capacidad de un fluido para fluir rápidamente.</li>
+                <li>c) La medida de la resistencia de un fluido al flujo.</li>
+                <li>d) La medida de la densidad de un fluido.</li>
+            </ul>
+        </div>
+        <div class="question">
+            <h3>23. ¿Qué es la dilatación térmica?</h3>
+            <ul class="options">
+                <li>a) El aumento de volumen de una sustancia al aumentar su temperatura.</li>
+                <li>b) La disminución de volumen de una sustancia al aumentar su temperatura.</li>
+                <li>c) El aumento de densidad de una sustancia al aumentar su temperatura.</li>
+                <li>d) La disminución de densidad de una sustancia al aumentar su temperatura.</li>
+            </ul>
+        </div>
+        <div class="question">
+            <h3>24. ¿Qué es la conductividad térmica?</h3>
+            <ul class="options">
+                <li>a) La capacidad de una sustancia para conducir calor.</li>
+                <li>b) La capacidad de una sustancia para resistir el flujo de calor.</li>
+                <li>c) La capacidad de una sustancia para conducir electricidad.</li>
+                <li>d) La capacidad de una sustancia para resistir el flujo de electricidad.</li>
+            </ul>
+        </div>
+        <div class="question">
+            <h3>25. ¿Qué es la energía interna de un fluido?</h3>
+            <ul class="options">
+                <li>a) La suma de todas las formas de energía en un sistema termodinámico.</li>
+                <li>b) La energía asociada al movimiento de las partículas en un fluido.</li>
+                <li>c) La energía asociada a la presión de un fluido.</li>
+                <li>d) La energía asociada al volumen de un fluido.</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; derechos reservados Prof. Alberto Sanchez</p>
+    </footer>
+</body>
+</html>
